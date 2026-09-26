@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GATE CS PYQ Quiz | Soni</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>GATE CS PYQ <span>Quiz</span></h1>
+  <div id="subject-box">
+    <button onclick="startQuiz('OS')">OS</button>
+    <button onclick="startQuiz('DBMS')">DBMS</button>
+    <button onclick="startQuiz('CN')">CN</button>
+  </div>
+  <div id="quiz-box" class="hide">
+    <div class="top"><span id="timer">30s</span><span id="q-count"></span></div>
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button id="next" onclick="nextQ()">Next</button>
+  </div>
+  <div id="result-box" class="hide">
+    <h2>Your Score: <span id="score"></span>/5</h2>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
